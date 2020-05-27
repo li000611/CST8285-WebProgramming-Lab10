@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+
+
+
+        
+        
+    
+    
+        <h1>Week 10 Lab - CST8285</h1>
+        <h2>Objective</h2>
+        <p>Upon completion of this lab, you should be able to:</p>
+        <ul>
+            <li>Transform a static HTML file into a dynamic PHP template</li>
+            <li>Create a web site using dynamic web page elements</li>
+            <li>Use the object-oriented capabilities of PHP to define a class, and add methods and properties to that class</li>
+            <li>upload the php files to your personal webspace on the Algonquin College network and test them externally</li>
+		</ul>
+        <h2>Instructions</h2>
+		<h3> Step 0 </h3>
+		  start working on the lab and test them on Xampp/ Apache on your laptop
+		  Make sure your php code run properly and won&#39;t crash
+		  Then test the program on remote hosting space
+		 <h3> Step 1 </h3>
+		 
+		Your webspace is accessible via https://www.ottawacampushosting.ca/~laca1234, where laca1234 is your network id.
+		Your FTP username is laca1234  and password is password!%! Enables you to access your webspace with the FileZilla FTP client. 
+		You will use this to upload your website files to your webspace. You should also use the master password available in FileZilla client 
+		to protect your work.
+		
+		I encourage you to complete this step this Thursday  after lecture period, as it will allow for the timely resolution of any potential 
+		and let me know ASAP.We will discuss this this Thursday during the lecture.
+
+		
+		
+        <h3>Step 2 - Download lab files from Bright Space</h3>
+        <p>Download the file <strong>Week10Lab.zip</strong> and save it to your computer in a folder called <code>Week10Lab</code>. The ZIP file contains some HTML files, a css folder with the <code>style.css</code> stylesheet, and an images file with some restaurant-related images.</p>
+        <h3>Step 3 - Create the dynamic web page elements</h3>
+        <p>PHP gives you the power to re-use code all over a website. This way, you can edit one file, and have those changes ripple through all of the pages that use that code.</p>
+        <p>In this step, you will use the <code>index.html</code> file to create re-usable header and footer elements.</p>
+        <p>Rename all the html files to .php files</p>
+        <ul>
+            <li>Create two files - <code>header.php</code>, and <code>footer.php</code>.
+            </li><li>The <code>header.php</code> will contain the HTML code needed to produce the &lt;head&gt; section, plus the web page header and the navigation menu.</li>
+            <li>The <code>footer.php</code> will return the HTML code needed to produce the footer(copyright) section of the webpage, plus any closing tags for elements opened (but not closed) in the header.php file.</li>
+            <li>Use the <code>include</code> statement in the <code>index.php</code> to include both the header and footer php files created.</li>
+        </ul>
+        <h3>Step 4 - Modify the <code>menu.php</code> and <code>contact.php</code> pages to include the header and footer files</h3>
+        <h3>Step 5 - Create a new PHP class called <code>menuItem</code></h3>
+        <p>The <code>Menuitem</code> class should contain the following:</p>
+        <ul>
+            <li>A private property called itemName</li>
+            <li>A private property called description</li>
+            <li>A private property called price</li>
+            <li>A three-argument constructor that populates each of the above-mentioned properties</li>
+            <li>Public methods for each of the above mentioned properties</li>
+        </ul>
+        create a separate php file for your class.And remember to <code>include</code> the files when you instantiate the objects.
+        <h3>Step 6 - Using the information provided in the index.html file
+		Instantiate four instances of the <code>Menuitem</code> class. and add them to Array()</h3>
+		The names are created in the following manner:    notice *1, **2 ... and they are the concatenation of ** &amp; the index of array...
+			<h4>The WP Burger *1 </h4> 
+			<h4>WP Kebabs **2</h4>
+			<h4>The WP Burger ***3</h4>
+			<h4>WP Kebabs ****4</h4>
+			
+		
+        populate the four instances of the menuItem class in the index.php file.
+		<strong> you are required to use while loop (hint below) to initialize  these instances,otherwise you will receive automatically 0 mark  </strong>
+		
+		<p>$i = 0; </p>
+		<p>while ($i &lt; 4){</p> 
+		<p>// instantiate the objects and add them to Array()</p>
+		<p>$i++; </p>
+        
+        <h3>Step 7 - Use the menuItem objects to display the daily special information on the home page</h3>
+        Replace the static HTML that displays the daily specials by using the public functions created in the above <code>Menuitem</code> classes.
+        
+		<h3>Step 8 - Use PHP to display the current year in the footer</h3>
+        Replace the hard-coded year in the copyright statement with code that will output the current year.
+        <h3>Step 9 - Use PHP to replace the word &quot;Today&#39;s&quot; in &quot;Today&#39;s Specials&quot; with the current day of the week</h3>
+        For example, if it&#39;s Monday, it should read &quot;Monday&#39;s Specials&quot;.
+        <h2>Submission Requirements</h2>
+        The lab must be submitted as follows:
+        
+          All relevant website files should be uploaded to a folder in your webspace called 
+		 <strong>Week10Lab</strong>
+          Submit URL to Bright Space. The link points  to the index.php file in your webspace, 
+        
+    
+<script type="text/javascript" src="/d2l/common/math/MathML.js?v=20.19.10.18565-31 "></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() { D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'); });</script></body></html>
